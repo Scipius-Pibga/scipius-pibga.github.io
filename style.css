@@ -1,0 +1,282 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Header Styles */
+header {
+    background-color: #2C3E50; /* Dark Blue */
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Navigation Bar Styles */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #2980B9; /* Lighter Blue */
+    padding: 10px 0;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    padding: 14px 20px;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    background-color: #1A5276;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('park-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 4em;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Section Styles */
+section {
+    padding: 40px;
+    background-color: white;
+}
+
+section h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section p {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* Color Themes for Each Section */
+
+/* Themed land Section */
+#explore {
+    background-color: #F4D03F; /* Egyptian Gold */
+    color: #1B2631;
+}
+
+#explore h2, #explore p {
+    color: #1B2631;
+}
+
+#explore div {
+    background-color: #F7DC6F;
+    border: 2px solid #B7950B;
+}
+
+#explore div:hover {
+    background-color: #F9E79F;
+}
+
+#explore h3 {
+    text-align: center;
+}
+
+
+/* Attractions Section */
+#attractions {
+    background-color: #884EA0; /* Royal Purple */
+    color: #FDFEFE;
+}
+
+#attractions h2, #attractions p {
+    color: #FDFEFE;
+}
+
+#attractions div {
+    background-color: #BB8FCE;
+    border: 2px solid #5B2C6F;
+}
+
+#attractions div:hover {
+    background-color: #D2B4DE;
+}
+
+#attractions h3 {
+    text-align: center;
+}
+
+/* Dining Section */
+#dining {
+    background-color: #D35400; /* Western Orange */
+    color: #FFFFFF;
+}
+
+#dining h2, #dining p {
+    color: #FFFFFF;
+}
+
+#dining div {
+    background-color: #E59866;
+    border: 2px solid #BA4A00;
+}
+
+#dining div:hover {
+    background-color: #EDBB99;
+}
+
+#dining h3 {
+    text-align: center;
+}
+
+/* Resort Accommodations */
+#resort {
+    background-color: #3498DB; /* Calm Blue */
+    color: #FFFFFF;
+}
+
+#resort h2, #resort p {
+    color: #FFFFFF;
+}
+
+#resort div {
+    background-color: #85C1E9;
+    border: 2px solid #2E86C1;
+}
+
+#resort div:hover {
+    background-color: #AED6F1;
+}
+
+#resort h3 {
+    text-align: center;
+}
+
+/* Tickets Section */
+#tickets {
+    background-color: #27AE60; /* Fresh Green */
+    color: #FFFFFF;
+}
+
+#tickets h2, #tickets p {
+    color: #FFFFFF;
+}
+
+#tickets div {
+    background-color: #58D68D;
+    border: 2px solid #1E8449;
+}
+
+#tickets div:hover {
+    background-color: #82E0AA;
+}
+
+#tickets h3 {
+    text-align: center;
+}
+
+/* Contact Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1.1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+}
